@@ -22,7 +22,7 @@ class ReportController extends Controller
     }
 
     public function index() {
-        date_default_timezone_set('asia/ho_chi_minh');
+        date_default_timezone_set('Europe/London');
         $format = 'Y/m/d';
         $now = date($format);
         $to = date($format, strtotime("+30 days"));

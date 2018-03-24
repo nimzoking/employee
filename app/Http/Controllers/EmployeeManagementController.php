@@ -102,7 +102,7 @@ class EmployeeManagementController extends Controller
     {
         $employee = Employee::find($id);
         // Redirect to state list if updating state wasn't existed
-        if ($employee == null || count($employee) == 0) {
+        if ($employee == null ) {
             return redirect()->intended('/employee-management');
         }
         $cities = City::all();

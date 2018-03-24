@@ -78,7 +78,7 @@ class CountryController extends Controller
     {
         $country = Country::find($id);
         // Redirect to country list if updating country wasn't existed
-        if ($country == null || count($country) == 0) {
+        if ($country == null ) {
             return redirect()->intended('/system-management/country');
         }
 

@@ -83,7 +83,7 @@ class StateController extends Controller
     {
         $state = State::find($id);
         // Redirect to state list if updating state wasn't existed
-        if ($state == null || count($state) == 0) {
+        if ($state == null) {
             return redirect()->intended('/system-management/state');
         }
 

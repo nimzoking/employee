@@ -77,7 +77,7 @@ class DepartmentController extends Controller
     {
         $department = Department::find($id);
         // Redirect to department list if updating department wasn't existed
-        if ($department == null || count($department) == 0) {
+        if ($department == null ) {
             return redirect()->intended('/system-management/department');
         }
 
