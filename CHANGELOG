@@ -1,0 +1,9 @@
+# Update Routines not working on original code, errors being generated when the update link is called:
+
+Current error:  
+
+(1/1) ErrorException
+count(): Parameter must be an array or an object that implements Countable
+at count(object(Employee))in EmployeeManagementController.php (line 105)
+
+Investigating, and hope to fix.  All of the update code is broke, so I suspect the routine is flawed, and a cut&paste has been applied.
