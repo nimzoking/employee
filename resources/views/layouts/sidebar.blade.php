@@ -40,15 +40,16 @@
             </span>
           </a>
           <ul class="treeview-menu">
+            <li><a href="{{ url('system-management/city') }}">City</a></li>
+            <li><a href="{{ url('system-management/country') }}">Country</a></li>
             <li><a href="{{ url('system-management/department') }}">Department</a></li>
             <li><a href="{{ url('system-management/division') }}">Division</a></li>
-            <li><a href="{{ url('system-management/country') }}">Country</a></li>
             <li><a href="{{ url('system-management/state') }}">State</a></li>
-            <li><a href="{{ url('system-management/city') }}">City</a></li>
-            <li><a href="{{ url('system-management/report') }}">Report</a></li>
-          </ul>
+        </ul>
         </li>
-        <li><a href="{{ route('user-management.index') }}"><i class="fa fa-user-circle"></i> <span>User</span></a></li>
+        <li><a href="{{ url('system-management/report') }}"><i class="fa fa-print"></i><span>Reports</span></a></li>
+        <li><a href="{{ route('user-management.index') }}"><i class="fa fa-user-circle"></i><span>User</span></a></li>
+        
       </ul>
       <!-- /.sidebar-menu -->
     </section>

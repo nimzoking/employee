@@ -6,7 +6,7 @@
   <div class="box-header">
     <div class="row">
         <div class="col-sm-8">
-          <h3 class="box-title">List of states</h3>
+          <h3 class="box-title">List of States</h3>
         </div>
         <div class="col-sm-4">
           <a class="btn btn-primary" href="{{ route('state.create') }}">Add new state</a>
@@ -47,8 +47,8 @@
                     <form class="row" method="POST" action="{{ route('state.destroy', ['id' => $state->id]) }}" onsubmit = "return confirm('Are you sure?')">
                         <input type="hidden" name="_method" value="DELETE">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <a href="{{ route('state.edit', ['id' => $state->id]) }}" class="btn btn-warning col-sm-3 col-xs-5 btn-margin">
-                        Update
+                        <a href="{{ route('state.edit', ['id' => $state->id]) }}" class="btn btn-success col-sm-3 col-xs-5 btn-margin">
+                        Edit
                         </a>
                         <button type="submit" class="btn btn-danger col-sm-3 col-xs-5 btn-margin">
                           Delete

@@ -4,10 +4,10 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Division Mangement
+        Division
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> System Mangement</a></li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> System Admin</a></li>
         <li class="active">Division</li>
       </ol>
     </section>

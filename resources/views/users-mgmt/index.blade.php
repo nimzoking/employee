@@ -55,8 +55,8 @@
                     <form class="row" method="POST" action="{{ route('user-management.destroy', ['id' => $user->id]) }}" onsubmit = "return confirm('Are you sure?')">
                         <input type="hidden" name="_method" value="DELETE">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <a href="{{ route('user-management.edit', ['id' => $user->id]) }}" class="btn btn-warning col-sm-3 col-xs-5 btn-margin">
-                        Update
+                        <a href="{{ route('user-management.edit', ['id' => $user->id]) }}" class="btn btn-success col-sm-3 col-xs-5 btn-margin">
+                        Edit
                         </a>
                         @if ($user->username != Auth::user()->username)
                          <button type="submit" class="btn btn-danger col-sm-3 col-xs-5 btn-margin">
