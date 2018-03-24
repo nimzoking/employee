@@ -39,7 +39,7 @@
                             <label for="middlename" class="col-md-4 control-label">Middle Name</label>
 
                             <div class="col-md-6">
-                                <input id="middlename" type="text" class="form-control" name="middlename" value="{{ old('middlename') }}" required>
+                                <input id="middlename" type="text" class="form-control" name="middlename" value="{{ old('middlename') }}">
 
                                 @if ($errors->has('middlename'))
                                     <span class="help-block">
